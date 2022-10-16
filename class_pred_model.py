@@ -1,34 +1,15 @@
-import numpy as np
 import pandas as pd
-
-#EDA and visualization imports:
-from pandas_profiling import ProfileReport
-import seaborn as sns
-import matplotlib.pyplot as plt
-
 #pre-processing imports:
 from textblob import TextBlob
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-import string
 import re
 from sklearn.feature_extraction.text import TfidfTransformer, CountVectorizer
-from spellchecker import SpellChecker
-from wordcloud import WordCloud
 
 #modelling imports:
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier, ExtraTreesClassifier
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import Pipeline
-from sklearn.svm import LinearSVC, SVC
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import GridSearchCV
-
-#evaluation imports:
-from sklearn.metrics import f1_score
-from sklearn.metrics import confusion_matrix, classification_report, plot_confusion_matrix
+from sklearn.svm import LinearSVC
 
 #global parameters
 additional  = ['retweet', 've', 'RT']
